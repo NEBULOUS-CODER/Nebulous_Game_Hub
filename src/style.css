@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a0033, #000010);
+  color: white;
+}
+
+.neon {
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff,
+    0 0 40px #00ffff;
+}
+
+.search-bar {
+  padding: 15px;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-box {
+  background: #0a001a;
+  border: 2px solid #00ffff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00ffff;
+  transition: transform 0.2s;
+}
+
+.game-box:hover {
+  transform: scale(1.05);
+}
